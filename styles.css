@@ -1,0 +1,115 @@
+/* Base Styles */ 
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0 0 1em;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    border: 5px solid #000;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+    border-top: 1px solid #999;
+}
+
+header .title {
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1em;
+}
+
+main {
+    padding: 0 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1 1 70%;
+    margin-right: 2%;
+}
+
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards li {
+    border: 5px solid #000;
+    margin-right: 2%;
+    margin-bottom: 1em;
+    flex: 1 1 30%;
+}
+
+.cards h2 {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0.5em 1em;
+}
+
+.cards .inner {
+    padding: 0.5em 1em;
+}
+
+.sidebar {
+    background-color: #333;
+    border: 5px solid #000;
+    padding: 0.5em 1em;
+    color: #fff;
+    flex: 1 1 25%;
+}
+
+/*for Desktop Layout */
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header ul {
+        display: flex;
+    }
+    
+    header a {
+        border-top: none;
+        border-left: 1px solid #999;
+        padding: 1em;
+    }
+    
+    main {
+        padding: 0 2em;
+    }
+    
+    article {
+        margin-right: 3%;
+    }
+    
+    .cards li {
+        margin-right: 3%;
+    }
+}
